@@ -18,7 +18,7 @@ namespace Com.Unit.Model
         /// 音乐ID
         /// </summary>
         [SugarColumn(IsPrimaryKey = true)]
-        public System.Int32 M_Id { get; set; }
+        public System.String M_Id { get; set; }
 
         /// <summary>
         /// 名称
@@ -38,7 +38,7 @@ namespace Com.Unit.Model
         /// <summary>
         /// 热度
         /// </summary>
-        public System.String M_Hot { get; set; }
+        public System.Int32 M_Hot { get; set; }
 
         /// <summary>
         /// 时间

@@ -32,8 +32,8 @@ namespace Vue_Music_API
                 m.SwaggerDoc("v1", new OpenApiInfo
                 {
                     Title = "Vue_Music_API",
-                    Description="API For WY",
-                    Contact=new OpenApiContact() { Name ="WY",Email="1753993763qq.com"},
+                    Description = "这是一个基于.net core的web API",
+                    Contact =new OpenApiContact() { Name ="WY",Email="1753993763qq.com"},
                     Version = "v1"
                 });
             });

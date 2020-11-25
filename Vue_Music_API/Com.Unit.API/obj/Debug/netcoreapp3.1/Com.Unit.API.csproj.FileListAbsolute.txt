@@ -7,3 +7,12 @@ G:\项目\C#项目\Vue_Music_API\Vue_Music_API\Com.Unit.API\obj\Debug\netcoreapp
 G:\项目\C#项目\Vue_Music_API\Vue_Music_API\Com.Unit.API\obj\Debug\netcoreapp3.1\Com.Unit.API.csproj.CoreCompileInputs.cache
 G:\项目\C#项目\Vue_Music_API\Vue_Music_API\Com.Unit.API\obj\Debug\netcoreapp3.1\Com.Unit.API.dll
 G:\项目\C#项目\Vue_Music_API\Vue_Music_API\Com.Unit.API\obj\Debug\netcoreapp3.1\Com.Unit.API.pdb
+C:\Users\wy\Desktop\Vue_Music_API\Vue_Music_API\Com.Unit.API\bin\Debug\netcoreapp3.1\Com.Unit.API.deps.json
+C:\Users\wy\Desktop\Vue_Music_API\Vue_Music_API\Com.Unit.API\bin\Debug\netcoreapp3.1\Com.Unit.API.dll
+C:\Users\wy\Desktop\Vue_Music_API\Vue_Music_API\Com.Unit.API\bin\Debug\netcoreapp3.1\Com.Unit.API.pdb
+C:\Users\wy\Desktop\Vue_Music_API\Vue_Music_API\Com.Unit.API\obj\Debug\netcoreapp3.1\Com.Unit.API.AssemblyInfoInputs.cache
+C:\Users\wy\Desktop\Vue_Music_API\Vue_Music_API\Com.Unit.API\obj\Debug\netcoreapp3.1\Com.Unit.API.AssemblyInfo.cs
+C:\Users\wy\Desktop\Vue_Music_API\Vue_Music_API\Com.Unit.API\obj\Debug\netcoreapp3.1\Com.Unit.API.csproj.CoreCompileInputs.cache
+C:\Users\wy\Desktop\Vue_Music_API\Vue_Music_API\Com.Unit.API\obj\Debug\netcoreapp3.1\Com.Unit.API.dll
+C:\Users\wy\Desktop\Vue_Music_API\Vue_Music_API\Com.Unit.API\obj\Debug\netcoreapp3.1\Com.Unit.API.pdb
+C:\Users\wy\Desktop\Vue_Music_API\Vue_Music_API\Com.Unit.API\obj\Debug\netcoreapp3.1\Com.Unit.API.csprojAssemblyReference.cache

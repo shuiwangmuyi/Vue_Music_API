@@ -1,28 +1,26 @@
 {
   "format": 1,
   "restore": {
-    "G:\\项目\\C#项目\\Vue_Music_API\\Vue_Music_API\\Vue_Music_API\\Vue_Music_API.csproj": {}
+    "C:\\Users\\wy\\Desktop\\Vue_Music_API\\Vue_Music_API\\Vue_Music_API\\Vue_Music_API.csproj": {}
   },
   "projects": {
-    "G:\\项目\\C#项目\\Vue_Music_API\\Vue_Music_API\\Com.Unit.API\\Com.Unit.API.csproj": {
+    "C:\\Users\\wy\\Desktop\\Vue_Music_API\\Vue_Music_API\\Com.Unit.API\\Com.Unit.API.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "G:\\项目\\C#项目\\Vue_Music_API\\Vue_Music_API\\Com.Unit.API\\Com.Unit.API.csproj",
+        "projectUniqueName": "C:\\Users\\wy\\Desktop\\Vue_Music_API\\Vue_Music_API\\Com.Unit.API\\Com.Unit.API.csproj",
         "projectName": "Com.Unit.API",
-        "projectPath": "G:\\项目\\C#项目\\Vue_Music_API\\Vue_Music_API\\Com.Unit.API\\Com.Unit.API.csproj",
+        "projectPath": "C:\\Users\\wy\\Desktop\\Vue_Music_API\\Vue_Music_API\\Com.Unit.API\\Com.Unit.API.csproj",
         "packagesPath": "C:\\Users\\wy\\.nuget\\packages\\",
-        "outputPath": "G:\\项目\\C#项目\\Vue_Music_API\\Vue_Music_API\\Com.Unit.API\\obj\\",
+        "outputPath": "C:\\Users\\wy\\Desktop\\Vue_Music_API\\Vue_Music_API\\Com.Unit.API\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "D:\\Program Files (x86)\\DevExpress 20.2\\Components\\Offline Packages",
-          "D:\\Microsoft\\Xamarin\\NuGet\\",
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
           "C:\\Users\\wy\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\DevExpress 20.2.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "netcoreapp3.1"
@@ -76,25 +74,23 @@
         }
       }
     },
-    "G:\\项目\\C#项目\\Vue_Music_API\\Vue_Music_API\\Com.Unit.Model\\Com.Unit.Model.csproj": {
+    "C:\\Users\\wy\\Desktop\\Vue_Music_API\\Vue_Music_API\\Com.Unit.Model\\Com.Unit.Model.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "G:\\项目\\C#项目\\Vue_Music_API\\Vue_Music_API\\Com.Unit.Model\\Com.Unit.Model.csproj",
+        "projectUniqueName": "C:\\Users\\wy\\Desktop\\Vue_Music_API\\Vue_Music_API\\Com.Unit.Model\\Com.Unit.Model.csproj",
         "projectName": "Com.Unit.Model",
-        "projectPath": "G:\\项目\\C#项目\\Vue_Music_API\\Vue_Music_API\\Com.Unit.Model\\Com.Unit.Model.csproj",
+        "projectPath": "C:\\Users\\wy\\Desktop\\Vue_Music_API\\Vue_Music_API\\Com.Unit.Model\\Com.Unit.Model.csproj",
         "packagesPath": "C:\\Users\\wy\\.nuget\\packages\\",
-        "outputPath": "G:\\项目\\C#项目\\Vue_Music_API\\Vue_Music_API\\Com.Unit.Model\\obj\\",
+        "outputPath": "C:\\Users\\wy\\Desktop\\Vue_Music_API\\Vue_Music_API\\Com.Unit.Model\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "D:\\Program Files (x86)\\DevExpress 20.2\\Components\\Offline Packages",
-          "D:\\Microsoft\\Xamarin\\NuGet\\",
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
           "C:\\Users\\wy\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\DevExpress 20.2.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "netcoreapp3.1"
@@ -144,25 +140,23 @@
         }
       }
     },
-    "G:\\项目\\C#项目\\Vue_Music_API\\Vue_Music_API\\Vue_Music_API\\Vue_Music_API.csproj": {
+    "C:\\Users\\wy\\Desktop\\Vue_Music_API\\Vue_Music_API\\Vue_Music_API\\Vue_Music_API.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "G:\\项目\\C#项目\\Vue_Music_API\\Vue_Music_API\\Vue_Music_API\\Vue_Music_API.csproj",
+        "projectUniqueName": "C:\\Users\\wy\\Desktop\\Vue_Music_API\\Vue_Music_API\\Vue_Music_API\\Vue_Music_API.csproj",
         "projectName": "Vue_Music_API",
-        "projectPath": "G:\\项目\\C#项目\\Vue_Music_API\\Vue_Music_API\\Vue_Music_API\\Vue_Music_API.csproj",
+        "projectPath": "C:\\Users\\wy\\Desktop\\Vue_Music_API\\Vue_Music_API\\Vue_Music_API\\Vue_Music_API.csproj",
         "packagesPath": "C:\\Users\\wy\\.nuget\\packages\\",
-        "outputPath": "G:\\项目\\C#项目\\Vue_Music_API\\Vue_Music_API\\Vue_Music_API\\obj\\",
+        "outputPath": "C:\\Users\\wy\\Desktop\\Vue_Music_API\\Vue_Music_API\\Vue_Music_API\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "D:\\Program Files (x86)\\DevExpress 20.2\\Components\\Offline Packages",
-          "D:\\Microsoft\\Xamarin\\NuGet\\",
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
           "C:\\Users\\wy\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\DevExpress 20.2.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "netcoreapp3.1"
@@ -176,11 +170,11 @@
           "netcoreapp3.1": {
             "targetAlias": "netcoreapp3.1",
             "projectReferences": {
-              "G:\\项目\\C#项目\\Vue_Music_API\\Vue_Music_API\\Com.Unit.API\\Com.Unit.API.csproj": {
-                "projectPath": "G:\\项目\\C#项目\\Vue_Music_API\\Vue_Music_API\\Com.Unit.API\\Com.Unit.API.csproj"
+              "C:\\Users\\wy\\Desktop\\Vue_Music_API\\Vue_Music_API\\Com.Unit.API\\Com.Unit.API.csproj": {
+                "projectPath": "C:\\Users\\wy\\Desktop\\Vue_Music_API\\Vue_Music_API\\Com.Unit.API\\Com.Unit.API.csproj"
               },
-              "G:\\项目\\C#项目\\Vue_Music_API\\Vue_Music_API\\Com.Unit.Model\\Com.Unit.Model.csproj": {
-                "projectPath": "G:\\项目\\C#项目\\Vue_Music_API\\Vue_Music_API\\Com.Unit.Model\\Com.Unit.Model.csproj"
+              "C:\\Users\\wy\\Desktop\\Vue_Music_API\\Vue_Music_API\\Com.Unit.Model\\Com.Unit.Model.csproj": {
+                "projectPath": "C:\\Users\\wy\\Desktop\\Vue_Music_API\\Vue_Music_API\\Com.Unit.Model\\Com.Unit.Model.csproj"
               }
             }
           }
@@ -198,6 +192,10 @@
             "Swashbuckle.AspNetCore": {
               "target": "Package",
               "version": "[5.6.3, )"
+            },
+            "log4net": {
+              "target": "Package",
+              "version": "[2.0.12, )"
             },
             "sqlSugarCore": {
               "target": "Package",

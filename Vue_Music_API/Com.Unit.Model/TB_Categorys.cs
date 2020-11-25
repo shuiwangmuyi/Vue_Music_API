@@ -12,7 +12,7 @@ namespace Com.Unit.Model
         {
         }
         [SugarColumn(IsPrimaryKey = true)]
-        public System.Int32 TypeId { get; set; }
+        public System.String TypeId { get; set; }
         public System.String TypeName { get; set; }
         public System.String TypeClass { get; set; }       
     }

@@ -8,7 +8,7 @@ using Microsoft.AspNetCore.Cors;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using SqlSugar;
-
+using Vue_Music_API.Method;
 
 namespace Vue_Music_API.Controllers
 {
@@ -16,8 +16,7 @@ namespace Vue_Music_API.Controllers
     [Route("[controller]/[Action]")]
     public class BaseController<T> : ControllerBase
     {
-       public SqlSugarClient db = DBSugar.MySqlInstance();          
-       public ISugarQueryable<T> _sugarTable { get { return db.Queryable<T>(); } }
-      
+        public static SqlSugarClient db = DBSugar.MySqlInstance();
+        public ISugarQueryable<T> _sugarTable { get { return db.Queryable<T>(); } }             
     }
 }

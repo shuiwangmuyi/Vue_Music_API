@@ -14,62 +14,127 @@ using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
 using SqlSugar;
 using Vue_Music_API.Controllers;
+using Vue_Music_API.Method;
 
 namespace VueproAPI.Controllers
 {
-    // [Route("api/[controller]")]
-    // [ApiController]    
-    public class MusicController : BaseController<TB_SINGER>
+    public class MusicController : BaseController<TB_Music>
     {
-
-    
-
-
-
-
-
-        [HttpGet]
-        public void GetMusic(string name)
+        ErrorMethod error = new ErrorMethod();
+        InforMethod infor = new InforMethod();
+        [HttpPost]
+        public string GetMusicTypeName(string typeName)
         {
-      
-            string url =$"http://m.kugou.com/singer/list/88?json=true";
-            RestApiVisitHelper helper = new RestApiVisitHelper();
-            string json = helper.Get(url);
-            JObject jobject = JObject.Parse(json);
-            string _data = jobject["singers"].ToString();
-            var af = JsonConvert.DeserializeObject(_data);
-            JArray array = new JArray();
-            if (af is JArray)
-                array = JsonConvert.DeserializeObject<JArray>(_data);
-            else
-                array = JsonConvert.DeserializeObject<JArray>("[" + _data + "]");
-
-            foreach (var data in array)
+            string message = "", code = '"' + "200" + '"', msg = '"' + "OK" + '"', total = "";
+            try
             {
-                var afaf = data["list"].ToString();
-                jobject = JObject.Parse(afaf);               
-               var afafa=  JsonConvert.DeserializeObject(jobject["info"].ToString());
-                JArray array1 = new JArray();
-
-                if (afafa is JArray)
-                    array1 = JsonConvert.DeserializeObject<JArray>(jobject["info"].ToString());
-                else
-                    array1 = JsonConvert.DeserializeObject<JArray>("[" + jobject["info"].ToString() + "]");
-                foreach (var data1 in array1)
+                string TypeId = "";
+                try
                 {
-                    TB_SINGER tb = new TB_SINGER
-                    {
-                        SingerId = data1["singerid"].ToString(),
-                        SingerName = data1["singername"].ToString(),
-                        SingerImg = data1["imgurl"].ToString()
-                    };
-                    db.Saveable<TB_SINGER>(tb).ExecuteCommand();
+                    infor.WriteInforLog("根据类型查询音乐", "GetMusicTypeName()", "TB_Categorys");
+                    var _types = db.Queryable<TB_Categorys>().Where(it => it.TypeName == typeName).Select(it => it.TypeId);
+                    infor.WriteInforLog($"执行的SQL语句为{_types.ToSql()}", "GetMusicTypeName()", "TB_Categorys");
+                    TypeId= _types.First();
                 }
-
+                catch(Exception e)
+                {
+                    code = '"' + "500" + '"';
+                    msg = '"' + "error" + '"';
+                    message = '"' + '"' + "";
+                    error.WriteErrorLog(e, "GetMusicTypeName()", "TB_Categorys");
+                }
+                infor.WriteInforLog("根据音乐类型ID查询对应的音乐", "GetMusicTypeName()", "TB_Music");
+                var musicNameJson= _sugarTable.Where(it => it.M_Type == TypeId).Distinct();
+                infor.WriteInforLog($"执行的SQL语句为{musicNameJson.ToSql()}", "GetMusicTypeName()", "TB_Music");
+                message = musicNameJson.ToJson();
+                infor.WriteInforLog($"根据音乐类型ID查询对应的音乐的总值：{musicNameJson.Count()}", "GetMusicTypeName()", "TB_Music");
+                total = '"' + $"{musicNameJson.Count()}" + '"';
             }
-             
+            catch(Exception e)
+            {               
+                code = '"' + "500" + '"';
+                msg = '"' + "error" + '"';
+                message = '"' + '"' + "";
+                error.WriteErrorLog(e, "GetMusicTypeName()", "TB_Music");
+            }
 
+            return $"[{{" + '"' + "code" + '"' + $":{code}," + '"'
+             + "msg" + '"' + $":{msg}," + '"'
+             + "data" + '"' + $":{message}," + '"' + "Total" + '"' + $":{total}}}]";
+        }   
+
+        /// <summary>
+        /// 根据音乐的热度进行排序
+        /// </summary>
+        /// <returns></returns>
+        [HttpPost]
+        public string GetMusicHotName()
+        {
+            string message = "", code = '"' + "200" + '"', msg = '"' + "OK" + '"', total = "";          
+            try
+            {
+                infor.WriteInforLog("取前十条数据", "GetMusicHotName()", "TB_Music");
+                var hotName = _sugarTable.OrderBy(it => it.M_Hot, OrderByType.Desc).Distinct().Take(10);
+                infor.WriteInforLog($"执行的SQL语句为{hotName.ToSql()}", "GetMusicHotName()", "TB_Music");
+                message = hotName.ToJson();
+                total = '"' + $"10" + '"';
+            }
+            catch(Exception e)
+            {
+                code = '"' + "500" + '"';
+                msg = '"' + "error" + '"';
+                message = '"' + '"' + "";
+                error.WriteErrorLog(e, "GetMusicTypeName()", "TB_Music");
+            }
+            return $"[{{" + '"' + "code" + '"' + $":{code}," + '"'
+                   + "msg" + '"' + $":{msg}," + '"'
+                   + "data" + '"' + $":{message}," + '"' + "Total" + '"' + $":{total}}}]";
         }
-        
+        /// <summary>
+        /// 搜索音乐
+        /// </summary>
+        [HttpPost]
+        public string SeachMusicName(string seachName)
+        {
+            string message = "", code = '"' + "200" + '"', msg = '"' + "OK" + '"', total = "", name="";
+            try
+            {
+                infor.WriteInforLog("根据搜索信息(在分类表中查询)查询音乐", "SeachMusicName()", "TB_Categorys");
+                var category = db.Queryable<TB_Categorys>().Where(it => it.TypeName.Contains(seachName))
+                                                 .Select(it => it.TypeId);
+                infor.WriteInforLog($"执行的SQL语句为{category.ToSql()}", "SeachMusicName()", "TB_Categorys");
+                name=category.First();
+            }
+            catch(Exception e)
+            {
+                code = '"' + "500" + '"';
+                msg = '"' + "error" + '"';
+                message = '"' + '"' + "";
+                error.WriteErrorLog(e, "GetMusicTypeName()", "TB_Music");
+            }
+            try
+            {
+                infor.WriteInforLog("根据搜索信息查询音乐并且按照热度排序", "SeachMusicName()", "TB_Music");
+                var seracMusicList = _sugarTable.Where(it => it.M_Author.Contains(seachName)
+                            || it.M_Name.Contains(seachName) || it.M_Words.Contains(seachName)
+                            || it.M_Id.Contains(seachName) || it.M_Type.Contains(name))
+                           .OrderBy(it=>it.M_Hot,OrderByType.Desc).Distinct();
+                infor.WriteInforLog($"执行的SQL语句为{seracMusicList.ToSql()}", "SeachMusicName()", "TB_Music");
+                message = seracMusicList.ToJson();
+                infor.WriteInforLog($"一共查询{seracMusicList.Count()}条数据", "SeachMusicName()", "TB_Music");
+                total = '"' + $"{seracMusicList.Count()}" + '"';
+            }
+            catch(Exception e)
+            {
+                code = '"' + "500" + '"';
+                msg = '"' + "error" + '"';
+                message = '"' + '"' + "";
+                error.WriteErrorLog(e, "SeachMusicName()", "TB_Music");
+            }
+
+            return $"[{{" + '"' + "code" + '"' + $":{code}," + '"'
+                 + "msg" + '"' + $":{msg}," + '"'
+                 + "data" + '"' + $":{message}," + '"' + "Total" + '"' + $":{total}}}]";
+        }
     }
 }

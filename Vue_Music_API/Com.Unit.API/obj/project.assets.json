@@ -2336,7 +2336,6 @@
       "path": "runtime.native.system.io.compression/4.1.0",
       "files": [
         ".nupkg.metadata",
-        ".signature.p7s",
         "ThirdPartyNotices.txt",
         "dotnet_library_license.txt",
         "lib/netstandard1.0/_._",
@@ -2363,7 +2362,6 @@
       "path": "runtime.native.system.security.cryptography/4.0.0",
       "files": [
         ".nupkg.metadata",
-        ".signature.p7s",
         "ThirdPartyNotices.txt",
         "dotnet_library_license.txt",
         "lib/netstandard1.0/_._",
@@ -6366,28 +6364,25 @@
   "packageFolders": {
     "C:\\Users\\wy\\.nuget\\packages\\": {},
     "D:\\Program Files (x86)\\DevExpress 20.2\\Components\\Offline Packages": {},
-    "D:\\Microsoft\\Xamarin\\NuGet\\": {},
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "G:\\项目\\C#项目\\Vue_Music_API\\Vue_Music_API\\Com.Unit.API\\Com.Unit.API.csproj",
+      "projectUniqueName": "C:\\Users\\wy\\Desktop\\Vue_Music_API\\Vue_Music_API\\Com.Unit.API\\Com.Unit.API.csproj",
       "projectName": "Com.Unit.API",
-      "projectPath": "G:\\项目\\C#项目\\Vue_Music_API\\Vue_Music_API\\Com.Unit.API\\Com.Unit.API.csproj",
+      "projectPath": "C:\\Users\\wy\\Desktop\\Vue_Music_API\\Vue_Music_API\\Com.Unit.API\\Com.Unit.API.csproj",
       "packagesPath": "C:\\Users\\wy\\.nuget\\packages\\",
-      "outputPath": "G:\\项目\\C#项目\\Vue_Music_API\\Vue_Music_API\\Com.Unit.API\\obj\\",
+      "outputPath": "C:\\Users\\wy\\Desktop\\Vue_Music_API\\Vue_Music_API\\Com.Unit.API\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "D:\\Program Files (x86)\\DevExpress 20.2\\Components\\Offline Packages",
-        "D:\\Microsoft\\Xamarin\\NuGet\\",
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
         "C:\\Users\\wy\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\DevExpress 20.2.config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "netcoreapp3.1"

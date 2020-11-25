@@ -43,5 +43,15 @@ namespace Com.Unit.Model
         /// 注册时间
         /// </summary>
         public System.DateTime? U_Regtime { get; set; }
+
+        /// <summary>
+        /// 用户账户
+        /// </summary>
+        public System.String U_Account { get; set; }
+
+        /// <summary>
+        /// 用户密码
+        /// </summary>
+        public System.String U_PassWord { get; set; }
     }
 }

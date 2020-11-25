@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "zwpMrcezOf4Ez1VSfO67MF+KCIMBbZw8KK8OGWKtQzwz4m/qcw2D//lDAaynNaymgiAVV2Sal4VLK/rh2OZ1dQ==",
+  "dgSpecHash": "AxVL9+Fd8FbBE/OEQ2gHv9jUXGyEQiLgC0V0cPB2FfFem2ngzei4DHVLnip6qFao+G8+3shX22N40LdJV6LMCw==",
   "success": true,
-  "projectFilePath": "G:\\项目\\C#项目\\Vue_Music_API\\Vue_Music_API\\Com.Unit.API\\Com.Unit.API.csproj",
+  "projectFilePath": "C:\\Users\\wy\\Desktop\\Vue_Music_API\\Vue_Music_API\\Com.Unit.API\\Com.Unit.API.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\wy\\.nuget\\packages\\bouncycastle.netcore\\1.8.3\\bouncycastle.netcore.1.8.3.nupkg.sha512",
     "C:\\Users\\wy\\.nuget\\packages\\google.protobuf\\3.11.4\\google.protobuf.3.11.4.nupkg.sha512",
@@ -24,9 +24,9 @@
     "C:\\Users\\wy\\.nuget\\packages\\oracle.manageddataaccess.core\\2.18.3\\oracle.manageddataaccess.core.2.18.3.nupkg.sha512",
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\runtime.native.system\\4.0.0\\runtime.native.system.4.0.0.nupkg.sha512",
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\runtime.native.system.data.sqlclient.sni\\4.4.0\\runtime.native.system.data.sqlclient.sni.4.4.0.nupkg.sha512",
-    "D:\\Microsoft\\Xamarin\\NuGet\\runtime.native.system.io.compression\\4.1.0\\runtime.native.system.io.compression.4.1.0.nupkg.sha512",
+    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\runtime.native.system.io.compression\\4.1.0\\runtime.native.system.io.compression.4.1.0.nupkg.sha512",
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\runtime.native.system.net.http\\4.0.1\\runtime.native.system.net.http.4.0.1.nupkg.sha512",
-    "D:\\Microsoft\\Xamarin\\NuGet\\runtime.native.system.security.cryptography\\4.0.0\\runtime.native.system.security.cryptography.4.0.0.nupkg.sha512",
+    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\runtime.native.system.security.cryptography\\4.0.0\\runtime.native.system.security.cryptography.4.0.0.nupkg.sha512",
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\runtime.win-arm64.runtime.native.system.data.sqlclient.sni\\4.4.0\\runtime.win-arm64.runtime.native.system.data.sqlclient.sni.4.4.0.nupkg.sha512",
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\runtime.win-x64.runtime.native.system.data.sqlclient.sni\\4.4.0\\runtime.win-x64.runtime.native.system.data.sqlclient.sni.4.4.0.nupkg.sha512",
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\runtime.win-x86.runtime.native.system.data.sqlclient.sni\\4.4.0\\runtime.win-x86.runtime.native.system.data.sqlclient.sni.4.4.0.nupkg.sha512",
