@@ -45,19 +45,19 @@ namespace Com.Unit.API
             }
             catch (ArgumentNullException ex)
             {
-                //  Response.Write("<script>alert('" + ex.Message + "')</script>");
+                Console.WriteLine(ex.Message);
                 return false;
             }
             //from 为 empty。或 recipients 为 empty。
             catch (ArgumentException ex)
             {
-                //Response.Write("<script>alert('" + ex.Message + "')</script>");
+                Console.WriteLine(ex.Message);
                 return false;
             }
             //已释放此对象。
             catch (ObjectDisposedException ex)
             {
-                //Response.Write("<script>alert('" + ex.Message + "')</script>");
+                Console.WriteLine(ex.Message);
                 return false;
             }
             /*

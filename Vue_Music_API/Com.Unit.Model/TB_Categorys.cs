@@ -14,6 +14,7 @@ namespace Com.Unit.Model
         [SugarColumn(IsPrimaryKey = true)]
         public System.String TypeId { get; set; }
         public System.String TypeName { get; set; }
-        public System.String TypeClass { get; set; }       
+        public System.String TypeClass { get; set; } 
+        public System.String TypePath { get; set; }
     }
 }

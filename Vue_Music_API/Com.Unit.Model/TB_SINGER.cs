@@ -21,5 +21,7 @@ namespace Com.Unit.Model
         /// 歌手图片
         /// </summary>
         public System.String SingerImg { get; set; }
+        public System.String SingerClass { get; set; }
+        public System.String SingeRanking { get; set; }
     }
 }
