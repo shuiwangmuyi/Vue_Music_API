@@ -53,5 +53,10 @@ namespace Com.Unit.Model
         /// 用户密码
         /// </summary>
         public System.String U_PassWord { get; set; }
+
+        /// <summary>
+        /// 用户头像
+        /// </summary>
+        public System.String U_ICO { get; set; }
     }
 }
