@@ -7,6 +7,7 @@ using System.Net;
 using System.Threading.Tasks;
 using Com.Unit.API;
 using Com.Unit.Model;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Cors;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
@@ -23,7 +24,10 @@ namespace VueproAPI.Controllers
         ErrorMethod error = new ErrorMethod();
         InforMethod infor = new InforMethod();
         [EnableCors("any")]
-        [Route("[controller]/[Action]")]
+        //  [Route("[controller]/[Action]")]
+        [Route("api/[Action]")]
+        //[Authorize(Policy = "MustAdmin")]
+        [Authorize]
         [HttpPost]
         public string GetMusicTypeName(string typeName)
         {
@@ -92,7 +96,8 @@ namespace VueproAPI.Controllers
             }
             return $"[{{" + '"' + "code" + '"' + $":{code}," + '"'
                    + "msg" + '"' + $":{msg}," + '"'
-                   + "data" + '"' + $":{message}," + '"' + "Total" + '"' + $":{total}}}]";
+                   + "data" 
+                   + '"' + $":{message}," + '"' + "Total" + '"' + $":{total}}}]";
         }
         /// <summary>
         /// 搜索音乐

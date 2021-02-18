@@ -65,6 +65,7 @@ namespace Vue_Music_API.Controllers
              + "msg" + '"' + $":{msg}," + '"'
              + "data" + '"' + $":{message}," + '"' + "Total" + '"' + $":{0}}}]";
         }
+
         [EnableCors("any")]
         [Route("[controller]/[Action]")]
         [HttpPost]

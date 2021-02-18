@@ -27,8 +27,7 @@ namespace Vue_Music_API.Method
                 error.ErrorTable = errorTable;
                 db.Saveable<TB_Error_log>(error).ExecuteCommand();               
                 logerror.Error("异常为:" + ex.Message + "========================方法是：" + method + "========================数据表为：" + errorTable);
-            }
-            
+            }            
             catch(Exception e)
             {
                 logerror.Error("异常为:"+e.Message+"========================方法是："+method+ "========================数据表为：" + errorTable);

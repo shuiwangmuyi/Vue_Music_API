@@ -1,11 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "c1nD+CL8SA20ElxIFReM1oafKyuHy1BQCazgTxbKg/O002+lTdw1xBx2XUFttJVOp+e3T89HLAhr7W+hNIGPlw==",
+  "dgSpecHash": "4MSDUo0GjKjIVLKX432glZbX0FEFe2Cvhi0N95EeXqq6WcdjFXOjPicTr+z2smvWeBOxb2h/KoaqQWAaIP3HLw==",
   "success": true,
   "projectFilePath": "C:\\Users\\wy\\Desktop\\Vue_Music_API\\Vue_Music_API\\Vue_Music_API\\Vue_Music_API.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\wy\\.nuget\\packages\\bouncycastle.netcore\\1.8.3\\bouncycastle.netcore.1.8.3.nupkg.sha512",
     "C:\\Users\\wy\\.nuget\\packages\\google.protobuf\\3.11.4\\google.protobuf.3.11.4.nupkg.sha512",
+    "C:\\Users\\wy\\.nuget\\packages\\htmlagilitypack.netcore\\1.5.0.1\\htmlagilitypack.netcore.1.5.0.1.nupkg.sha512",
     "C:\\Users\\wy\\.nuget\\packages\\k4os.compression.lz4\\1.1.11\\k4os.compression.lz4.1.1.11.nupkg.sha512",
     "C:\\Users\\wy\\.nuget\\packages\\k4os.compression.lz4.streams\\1.1.11\\k4os.compression.lz4.streams.1.1.11.nupkg.sha512",
     "C:\\Users\\wy\\.nuget\\packages\\k4os.hash.xxhash\\1.0.6\\k4os.hash.xxhash.1.0.6.nupkg.sha512",
@@ -31,6 +32,7 @@
     "C:\\Users\\wy\\.nuget\\packages\\newtonsoft.json\\12.0.3\\newtonsoft.json.12.0.3.nupkg.sha512",
     "C:\\Users\\wy\\.nuget\\packages\\npgsql\\3.2.7\\npgsql.3.2.7.nupkg.sha512",
     "C:\\Users\\wy\\.nuget\\packages\\oracle.manageddataaccess.core\\2.18.3\\oracle.manageddataaccess.core.2.18.3.nupkg.sha512",
+    "C:\\Users\\wy\\.nuget\\packages\\restsharp\\106.11.7\\restsharp.106.11.7.nupkg.sha512",
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\runtime.native.system\\4.0.0\\runtime.native.system.4.0.0.nupkg.sha512",
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\runtime.native.system.data.sqlclient.sni\\4.4.0\\runtime.native.system.data.sqlclient.sni.4.4.0.nupkg.sha512",
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\runtime.native.system.io.compression\\4.1.0\\runtime.native.system.io.compression.4.1.0.nupkg.sha512",

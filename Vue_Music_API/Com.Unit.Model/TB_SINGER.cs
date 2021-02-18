@@ -23,5 +23,9 @@ namespace Com.Unit.Model
         public System.String SingerImg { get; set; }
         public System.String SingerClass { get; set; }
         public System.String SingeRanking { get; set; }
+        /// <summary>
+        /// 介绍
+        /// </summary>
+        public System.String introduce { get; set; }
     }
 }

@@ -17,6 +17,7 @@ namespace Com.Unit.Model
         /// <summary>
         /// 用户Id
         /// </summary>
+        [SugarColumn(IsPrimaryKey = true)]
         public System.Int32 U_Id { get; set; }
 
         /// <summary>
@@ -27,7 +28,7 @@ namespace Com.Unit.Model
         /// <summary>
         /// 出生日期
         /// </summary>
-        public System.DateTime? U_Birthday { get; set; }
+        public System.String U_Birthday { get; set; }
 
         /// <summary>
         /// 电子邮件
@@ -42,7 +43,7 @@ namespace Com.Unit.Model
         /// <summary>
         /// 注册时间
         /// </summary>
-        public System.DateTime? U_Regtime { get; set; }
+        public System.String U_Regtime { get; set; }
 
         /// <summary>
         /// 用户账户
@@ -58,5 +59,6 @@ namespace Com.Unit.Model
         /// 用户头像
         /// </summary>
         public System.String U_ICO { get; set; }
+        public System.String U_Sex { get; set; }
     }
 }
